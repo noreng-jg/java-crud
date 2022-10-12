@@ -1,0 +1,77 @@
+crud-JAVA
+________________________
+
+A simple vanilla CLI JAVA app for incubation interview / certification 
+
+Some concepts worked on this project:
+
+- Interface abstraction
+- Classes & Inheritance
+- Arrays & OOP  
+- Dependency Injection
+- Try/catch handling
+- Overload
+
+-----------------------
+
+Dependencies: (Linux Environment)
+
+- Make
+- OpenJDK 11+
+
+-----------------------
+
+Structure:
+
+.
+├── bin (.class Files)
+├── Makefile
+├── README
+├── src
+│   ├── cli
+│   │   └── CLI.java
+│   ├── main.java
+│   ├── models
+│   │   ├── Person.java
+│   │   └── Student.java
+│   └── repository
+│       ├── FakeRepository.java
+│       └── IRepository.java
+└── TODO
+
+------------------------
+
+Building:
+
+$ make
+
+-----------------------
+
+Running the Apllication:
+
+$ make run
+
+-----------------------
+
+Display:
+
+Choose one of the following options:            
+--------------------------------------
+1 - Create person or student                                                                                                                                                                     
+2 - Retrieve all persons and students                                                                                                                                                            
+3 - Update person/student data                                                                                                                                                                   
+4 - Delete person/student                                                                                                                                                                        
+5 - Finish operations                                                                                                                                                                            
+--------------------------------------          
+                                                
+Enter option here: 2                                                                                                                                                                             
+                                                                                                                                                                                                 
+========= Retrieve All Persons ============
+ID   | Name                     | Phone Number   | Birthday   | Created At | Updated At | Type    | Grade   
+-----------------------------------------------------------------------------------------------                                                                                                  
+1    | Joao da Silva            | 7138297123791  | 1997-05-21 | 2022-10-12 | 2022-10-12 | Student | 9.0                                                                                          
+2    | Batata Sauro             | 000001         | 1000-01-01 | 2022-10-12 | 2022-10-12 | Student | 0.4     
+3    | AlfaUniverso             | 999991         | 1201-01-01 | 2022-10-12 | 2022-10-12 | Person  |  -     
+
+------------------------
+
